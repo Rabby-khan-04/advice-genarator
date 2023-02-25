@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e3f461dde5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Random Advice</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#1d0042] to-[#380554] h-screen flex items-center justify-center">
+
+
+    <main class="w-full">
+        <section>
+            <div>
+                <div class="w-[768px] mx-auto">
+                    <div class="flex mb-7">
+                        <input id="search-filed" type="text" placeholder="Search Any Advice"
+                            class="input input-bordered input-primary w-full glass rounded-none text-white" />
+                        <button id="search-btn" class="btn btn-warning rounded-none">Search Advice</button>
+                    </div>
+
+                    <div class="text-center relative glass p-12 bg-gradient-to-r from-[#380554] to-[#1d0042]">
+
+                        <h4 class="text-[#52feac] text-2xl font-semiboldbold italic">Advice <span
+                                id="advice-id">#122</span></h4>
+                        <p class="text-xl my-5 text-white" id="advice"></p>
+
+                        <div class="divider text-[#52feac] border-[#52feac]"><i class="fa-solid fa-pause"></i></div>
+
+                        <button id="dice"
+                            class="text-[#380554] -bottom-5 left-0 right-0 mx-auto absolute text-2xl hover:text-[#52feac] btn rounded-full bg-[#50fea7]"><i
+                                class="fa-solid fa-dice"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>
